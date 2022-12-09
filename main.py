@@ -23,11 +23,11 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def home_index(request: Request):
     """
-    Function to render index.html at route '/' as a get request
-    Args:
-        request (Request): request in path operation that will return a template
-    Returns:
-        TemplateResponse: render index.html
+    Function to render `index.html` at route '/' as a get request
+    __Args__:
+    - request (Request): request in path operation that will return a template
+    __Returns__:
+    - TemplateResponse: render `index.html`
     """
     return templates.TemplateResponse("index.html", {"request": request})
 
@@ -35,11 +35,11 @@ async def home_index(request: Request):
 @app.get("/predictor", response_class=HTMLResponse)
 async def read_item(request: Request):
     """
-    Function to render predictor.html at route '/predictor' as a get request
-    Args:
-        request (Request): request in path operation that will return a template
-    Returns:
-        TemplateResponse: render predictor.html
+    Function to render `predictor.html` at route '/predictor' as a get request
+    __Args__:
+    - request (Request): request in path operation that will return a template
+    __Returns__:
+    - TemplateResponse: render `predictor.html`
     """
     return templates.TemplateResponse("predictor.html", {"request": request})
 
@@ -57,20 +57,20 @@ async def predict(
 ):
     """
     Function to predict car price
-    and shows the result by rendering result.html at route '/predict'
+    and shows the result by rendering `predictor.html` at route '/predict'
 
-    Args:
-        request (Request): request in path operation that will return a template
-        model_year (int, optional): model year of the car
-        present_price (float, optional): present price of the car
-        kms_driven (int, optional): kilometers driven by the car till now
-        owner (int, optional): no of owners used
-        fuel_type (str, optional): car's fuel type
-        seller_type (str, optional): car seller type
-        transmission_type (str, optional): car's transmission type
+    __Args__:
+    - request (Request): request in path operation that will return a template
+    - model_year (int): model year of the car
+    - present_price (float): present price of the car
+    - kms_driven (int): kilometers driven by the car till now
+    - owner (int): no of owners used
+    - fuel_type (str): car's fuel type
+    - seller_type (str): car seller type
+    - transmission_type (str): car's transmission type
 
-    Returns:
-        Template: render predictor.html
+    __Returns__:
+    - Template: render `predictor.html`
     """
     # difference between current year and model year
     year = datetime.date.today().year - model_year

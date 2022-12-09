@@ -5,9 +5,8 @@
 ![javascript](https://img.shields.io/badge/JavaScript-323330?logo=javascript&logoColor=F7DF1E)
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?logo=numpy&logoColor=white)
 ![pandas](https://img.shields.io/badge/Pandas-2C2D72?logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
-![fastapi](https://img.shields.io/badge/fastapi-109989?logo=FASTAPI&logoColor=white)
-![heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/Scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
+![fastapi](https://img.shields.io/badge/Fastapi-109989?logo=FASTAPI&logoColor=white)
 ![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
 
 Pricefy app used to predict the price of the car based on certain input parameters created using python's scikit-learn, fastapi, numpy and joblib packages.
@@ -33,7 +32,7 @@ The data contains the following columns:
 ## Installation
 Open Anaconda prompt and create new environment
 ```
-conda create -n your_env_name python = (any_version_number)
+conda create -n your_env_name python = (any_version_number > 3.10.4)
 ```
 Then Activate the newly created environment
 ```
